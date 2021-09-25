@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      form {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 60px auto;
+      }
+
+      input {
+        margin-bottom: 15px;
+      }
+
+      .error {
+        border-color: red;
+      }
+
+      .empty {
+        border-color: yellow;
+      }
+
+      .correct {
+        border-color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <input type="text" required placeholder="name" name="name">
+      <input type="text" placeholder="phone" name="phone">
+      <input type="checkbox" name="checkbox" id="">
+      <input type="submit" value="Submit">
+    </form>
+    <script src="./build/script.js"></script>
+  </body>
+</html>
